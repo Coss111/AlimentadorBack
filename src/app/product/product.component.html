@@ -1,0 +1,95 @@
+<div class="grid-view" *ngIf="view == 'grid'">
+  <div class="card text-center">
+    <div class="card-header fw-bold fs-5 text-success">
+      {{ header }}
+    </div>
+
+    <div class="overflow-hidden d-flex justift-content-center align-items-center">
+      <img [src]="imageSrc" alt="" class="card-img-top">
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title title"> {{ title }}</h5>
+      <h6 class="card-subtitle my-2 text-primary">{{ availableProducts }} unidades disponibles </h6>
+      <p class="card-text description"> {{ description }} </p>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title text-success"> Precio
+        <span class="text-primary">${{ price }}</span>
+      </h5>
+    </div>
+
+    <div class="card-footer d-grid gap-2">
+      <button class="btn btn-outline-success" type="button" (click)="comprarProducto(id)" > Comprar</button>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="list-view" *ngIf="view == 'list'">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
+        <img [src]="imageSrc" alt="Product Image" class="img-fluid rounded-start">
+      </div>
+      <div class="col">
+        <div class="card-header text-center fw-bold fs-5 text-success">
+          {{ header }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title title"> {{ title }}</h5>
+          <p class="card-text description"> {{ description }} </p>
+          <h6 class="card-subtitle my-2 text-primary">{{ availableProducts }} unidades disponibles</h6>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-success">Precio
+            <span class="text-primary"> ${{ price }} </span>
+          </h2>
+        </div>
+
+        <div class="card-footer text-muted d-grid gap-2">
+          <button class="btn btn-outline-success" type="button" (click)="comprarProducto(id)"> Comprar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="cart-item-view" *ngIf="view == 'currcartitem'">
+  <div class="card">
+    <div class="row g-0">
+      <div class="col-4 overflow-hidden d-flex justify-content-center align-items-center">
+        <img [src]="imageSrc" alt="Product Image" class="img-fluid rounded-start">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <h5 class="card-title title"> {{ header }}</h5>
+          <h5 class="card-title text-success"> Precio 
+            <span class="text-primary"> ${{price}}</span>
+          </h5>
+        </div>
+        <div class="card-footer text-muted d-grid gap-2">
+          <button class="btn btn-outline-success" type="button" (click)="comprarProducto(id)">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cart-item-view" *ngIf="view === 'prevcartitem'">
+  <div class="card text-center">
+
+      <div class="overflow-hidden d-flex justify-content-center align-items-center">
+          <img [src]="imageSrc" alt=""
+               class="card-img-top">
+      </div>
+
+      <div class="card-body">
+          <h5 class="card-title title"> {{header}} </h5>
+      </div>
+  </div>
+</div>

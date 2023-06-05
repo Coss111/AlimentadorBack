@@ -1,0 +1,6 @@
+/* Estilos CSS para el bordeado con sombra */
+.shadowed-border {
+    border: 2px solid #ced4da; /* Color y grosor del borde */
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2); /* Estilo de sombra */
+  }
+  
