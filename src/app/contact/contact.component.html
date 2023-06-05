@@ -1,30 +1,14 @@
-  <div class="card mx-auto border-3 mb-2 p-2">
+  <div class="container-fluid d-flex justify-content-around align-items-center">
 
-    <div class="row">
-      <div class="col-md-6 overflow-hidden d-flex justify-content-center align-items-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15298.577390932282!2d-68.10736975!3d-16.544043199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20d1a3532d45%3A0xb409d9619f445fb2!2sParque%20de%20Challoma%20%22Cruz%20del%20Sur%22!5e0!3m2!1ses!2sbo!4v1685331692599!5m2!1ses!2sbo"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="col">
-        <div class="titulo card-header text-center justify-content-center align-items-center">
-          Contact Information
-        </div>
-        <div class="card-body">
-          <h4 class="card-title text-muted"> <strong>Address:</strong> 123 Main Street, City, Country </h4>
-          <h4 class="card-title text-muted"> <strong>Phone:</strong> +1 123 456 7890 </h4>
-          <h4 class="card-title text-muted"> <strong>Email:</strong> info@example.com </h4>
+    
+    
 
-        </div>
-        <div>
-          <h5 class="card-title text-muted text-center"><em>"¡Descubre nuestra amplia gama de productos de calidad en nuestra tienda en
-            línea! Desde herramientas de precisión hasta materiales de construcción, tenemos todo lo que necesitas para
-            tus proyectos. Aprovecha esta oportunidad y contáctanos hoy
-            mismo para recibir el mejor servicio y convertir tus ideas en realidad. ¡No esperes más, juntos
-            construiremos grandes cosas!"</em></h5>
-        </div>
+    <div class="row g-5">
+      <div class="col-3"  *ngFor="let contact of contactos" >
+        <app-contactinfo [id]="contact.id" [imageSrc]="contact.imageSrc" [nombre]="contact.nombre" [phone]="contact.phone" [linkelin]="contact.linkelin"></app-contactinfo>
+  
       </div>
     </div>
 
   </div>
+

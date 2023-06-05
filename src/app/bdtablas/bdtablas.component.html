@@ -1,0 +1,33 @@
+<div class="container align-items-center align-content-center">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <!-- <form class="form-inline">
+          <fieldset class="form-group col-sm-11"></fieldset>
+          <fieldset class="form-group col-sm-1">
+               <a class="btn btn-primary" [routerLink]="['/productos/agregar']">+</a>
+          </fieldset>
+        </form> -->
+        <table class="table w-75mx-auto  table-hover my-shadow">
+            <thead>
+                <tr class="row">
+                  <th class="col-sm-1"></th>
+                  <th class="col-sm-2"> id_dispensing </th>
+                  <th class="col-sm-4"> tipo </th>
+                  <th class="col-sm-3"> disponibilidad </th>
+                  <th class="col-sm-2"> fechaHora</th>
+                </tr>
+              </thead>
+          <tbody>
+            <tr *ngFor="let tabla1 of dispensinglog | async" class="row">
+                <td class="col-sm-1"></td>
+              <td class="col-sm-2"><i>{{ tabla1.id_dispensing }}</i></td>
+              <td class="col-sm-4"><i>{{ tabla1.tipo }}</i></td>
+              <td class="col-sm-3"><i>{{ tabla1.disponibilidad }}</i></td>
+              <td class="col-sm-2"><i>{{ tabla1.fechaHora }}</i> </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
