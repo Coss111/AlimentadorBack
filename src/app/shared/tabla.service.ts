@@ -14,8 +14,16 @@ export class TablaService {
 
   constructor(private http: HttpClient) { }
 
-  obtenerTabla() {
-    return this.http.get<DispensingModel[]>(this.BASE_URL+'/dispensing');
+  obtenerTablaDispensador() {
+    return this.http.get<DispensingModel[]>(this.BASE_URL+'/dispensinglog');
+  }
+
+  obtenerTablaHorario() {
+    return this.http.get<ScheduleModel[]>(this.BASE_URL+'/schedule');
+  }
+
+  obtenerTablaAlertas() {
+    return this.http.get<CleaningModel[]>(this.BASE_URL+'/cleaningalerts');
   }
 
   // obtenerProductos() {

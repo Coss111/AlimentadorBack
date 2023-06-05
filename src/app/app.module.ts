@@ -9,10 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FunctionComponent } from './function/function.component';
-import { GraficosComponent } from './graficos/graficos.component';
+//import { GraficosComponent } from './graficos/graficos.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { BDtablasComponent } from './bdtablas/bdtablas.component';
-import { CardGraficosComponent } from './card-graficos/card-graficos.component';
+//import { CardGraficosComponent } from './card-graficos/card-graficos.component';
 
 
 @NgModule({
@@ -23,10 +23,10 @@ import { CardGraficosComponent } from './card-graficos/card-graficos.component';
     FooterComponent,
     ContactComponent,
     FunctionComponent,
-    GraficosComponent,
+    //GraficosComponent,
     ContactinfoComponent,
     BDtablasComponent,
-    CardGraficosComponent
+    //CardGraficosComponent
   ],
   imports: [
     BrowserModule,
