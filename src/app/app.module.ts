@@ -12,6 +12,7 @@ import { FunctionComponent } from './function/function.component';
 //import { GraficosComponent } from './graficos/graficos.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { BDtablasComponent } from './bdtablas/bdtablas.component';
+import { AlarmComponent } from './alarm/alarm.component';
 //import { CardGraficosComponent } from './card-graficos/card-graficos.component';
 
 
@@ -26,6 +27,7 @@ import { BDtablasComponent } from './bdtablas/bdtablas.component';
     //GraficosComponent,
     ContactinfoComponent,
     BDtablasComponent,
+    AlarmComponent,
     //CardGraficosComponent
   ],
   imports: [
