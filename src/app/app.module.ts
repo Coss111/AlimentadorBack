@@ -13,6 +13,7 @@ import { FunctionComponent } from './function/function.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { BDtablasComponent } from './bdtablas/bdtablas.component';
 import { AlarmComponent } from './alarm/alarm.component';
+import { ContactnachoComponent } from './contactnacho/contactnacho.component';
 //import { CardGraficosComponent } from './card-graficos/card-graficos.component';
 
 
@@ -28,6 +29,7 @@ import { AlarmComponent } from './alarm/alarm.component';
     ContactinfoComponent,
     BDtablasComponent,
     AlarmComponent,
+    ContactnachoComponent,
     //CardGraficosComponent
   ],
   imports: [

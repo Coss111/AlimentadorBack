@@ -10,14 +10,6 @@ export class ContactComponent {
   contactos = [
     {
       id: 1,
-      imageSrc: 'https://i.ibb.co/tBrzZhY/nacho.jpg',
-      nombre: 'Ignacio Agramont',
-      phone: '78978984',
-      linkelin: 'https://www.linkedin.com/in/ignacioagramont',
-      
-    },
-    {
-      id: 2,
       imageSrc: 'https://i.ibb.co/LxCGnDs/jose.jpg',
       nombre: 'Jose Condori',
       phone: '74080986',
@@ -27,7 +19,7 @@ export class ContactComponent {
       
     },
     {
-      id: 3,
+      id: 2,
       imageSrc: 'https://i.ibb.co/WxXZPTV/cos.jpg',
       nombre: 'Cosette Guevara',
       phone: '73249474',
@@ -35,14 +27,24 @@ export class ContactComponent {
       
     },
     {
-      id: 4,
+      id: 3,
       imageSrc: 'https://i.ibb.co/GTXnbRL/ede.jpg',
       nombre: 'Edely Tito',
       phone: '65636141',
       linkelin: 'https://www.linkedin.com/in/edely-tito-99b6461aa/',
       
-    },
-  
+    }
+  ];
+
+  nacho = [
+    {
+      id: 1,
+      imageSrc: 'https://i.ibb.co/FHf9K1Z/nachopengueno.jpg',
+      nombre: 'Ignacio Agramont',
+      phone: '78978984',
+      linkelin: 'https://www.linkedin.com/in/ignacioagramont',
+      
+    }
 
   ];
   
